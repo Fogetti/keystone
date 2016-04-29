@@ -20,6 +20,15 @@
 var $ = require('jquery');
 var marked = require('marked');
 
+marked.plugins = {
+  note: function(arg) {
+    return '<blockquote class="note">' + arg + '</blockquote>';
+  },
+  caution: function(arg) {
+    return '<blockquote class="note">' + arg + '</blockquote>';
+  }
+};
+
 /* MARKDOWN CLASS DEFINITION
  * ========================== */
 

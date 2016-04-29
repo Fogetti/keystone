@@ -4,6 +4,15 @@ var util = require('util');
 var TextType = require('../text/TextType');
 var utils = require('keystone-utils');
 
+marked.plugins = {
+  note: function(arg) {
+    return '<blockquote class="note">' + arg + '</blockquote>';
+  },
+  caution: function(arg) {
+    return '<blockquote class="note">' + arg + '</blockquote>';
+  }
+};
+
 /**
  * Markdown FieldType Constructor
  * @extends Field
