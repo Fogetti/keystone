@@ -55,7 +55,7 @@
     "list-to-array": "1.1.0",
     "lodash": "4.11.1",
     "mandrill-api": "1.0.45",
-    "marked": "0.3.5",
+    "marked": "git+https://github.com/Fogetti/marked.git#plugin-branch",
     "method-override": "2.3.5",
     "moment": "2.13.0",
     "mongoose": "4.4.14",
