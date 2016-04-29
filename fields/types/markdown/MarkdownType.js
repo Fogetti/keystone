@@ -9,7 +9,7 @@ marked.plugins = {
     return '<blockquote class="note">' + arg + '</blockquote>';
   },
   caution: function(arg) {
-    return '<blockquote class="note">' + arg + '</blockquote>';
+    return '<blockquote class="caution">' + arg + '</blockquote>';
   }
 };
 
