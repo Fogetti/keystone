@@ -29,6 +29,13 @@ marked.plugins = {
   }
 };
 
+// Synchronous highlighting with highlight.js
+marked.setOptions({
+  highlight: function (code) {
+    return require('highlight.js').highlightAuto(code).value;
+  }
+});
+
 /* MARKDOWN CLASS DEFINITION
  * ========================== */
 
